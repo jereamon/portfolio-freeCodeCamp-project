@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #666;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+.container {
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* To Top Button Styles */
+  .to-top-button {
+    z-index: 1;
+  }
+
+  .to-top-button a {
+    bottom: 10px;
+    color: rgb(97, 97, 97);
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .to-top-button a:active {
+    color: #722872;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+
+  .to-top-button i {
+    font-size: 50px;
+  }
+/* To Top Button Styles End */
+
+/* Header and Nav */
+  /* Logo */
+    .logo {
+      color: white;
+      font-size: 2rem;
+      margin: 3px 0 0 8.25%;
+      position: absolute;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .logo:hover {
+      color: #888;
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+  /* Logo Ends */
+
+  /* Hambuger Styles */
+    .header-outer {
+      background-color: #722872;
+      height: 50px;
+      opacity: 1;
+      position: fixed;
+      transition: 0.8s;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .burger-container {
+      cursor: pointer;
+      padding: 5px 40px 0 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  /* Hamburger Styles End */
+
+  /* Nav Portion */
+    .nav {
+      display: block;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      transition: all 500ms;
+      top: 50px;
+      width: 100%;
+    }
+
+    .nav.open {
+      height: 320%;
+    }
+
+    .nav li {
+      background-color: #232323;
+      border-bottom: 1px solid black;
+      padding: 15px 0;
+      text-align: right;
+      width: 100%;
+    }
+
+    .nav li a {
+      color: #ccc;
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      padding: 0 16.5%;
+      text-decoration: none;
+    }
+
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+/* Header and Nav End */
+
+/* About Section */
+  .about-container {
+    background-color: #aaa;
+    color: #fff;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  .about-content {
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    width: 90%;
+  }
+
+  .about-content p {
+    padding: 25px;
+  }
+
+  .about-content h4 {
+    font-size: 1.5rem;
+    margin: 15px 0 0;
+  }
+
+  .about-content hr {
+    background-color: #fff;
+    border: none;
+    height: 2px;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .about-content img {
+    border-radius: 50%;
+    max-width: 85%;
+    margin: 30px 0 30px 0;
+  }
+/* About Section Ends */
+
+/* Portfolio Section */
+  .portfolio-container {
+    box-shadow: inset 0px -23px 30px -32px rgba(0,0,0,1);
+    padding: 60px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .portfolio-content h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-hr {
+    background-color: #666;
+    border: none;
+    height: 4px;
+    margin: 25px 0;
+  }
+
+  .portfolio-content img {
+    box-shadow: 0px 0px 20px 5px rgba(176,176,176,0.6);
+    margin: 30px 0;
+    width: 90%;
+  }
+/* Portfolio Section ends */
+
+/* Contact Section */
+  .contact-container {
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  .contact-content {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contact-hr {
+    background-color: #666;
+    border: none;
+    height: 4px;
+    margin: 5px 0 25px;
+  }
+
+  .contact-content form input {
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    border-bottom: solid 1px #666;
+    font-size: 2rem;
+    margin: 15px 0;
+    width: 100%;
+    height: 45px;
+    outline: none;
+  }
+
+  .contact-content form input[type="text-area"] {
+    height: 200px
+  }
+
+  .contact-content button {
+    border-radius: 10px;
+    padding: 15px 30px;
+  }
+/* Contact Section Ends */
+
+/* Footer Section */
+  .footer-container {
+    width: 100%
+  }
+
+  .footer-top-container {
+    background-color: #aaa;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-top-container h3 {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  .footer-content {
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 85%;
+  }
+
+  .github-link img {
+    margin: 25px 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-bottom-container {
+    background-color: #722872;
+    height: 50px;
+    text-align: center;
+  }
+
+  .footer-bottom-container p {
+    padding: 15px 0;
+    color: white;
+  }
+
+/* Footer Section Ends */
+
+/* Media Queries Start */
+  /* In the first media query I hide hamburger button and to-top-button,
+  and style nav links to be always showing.
+  The rest of the queries are to adjust element sizes as screen
+  size increases
+  */
+  @media (min-width: 550px) {
+    /* Nav Portion */
+      .to-top-button {
+        display: none;
+      }
+
+      .burger-container {
+        display: none;
+      }
+
+      .nav {
+        display: inline-block;
+        height: 50px;
+        text-align: right;
+        top: 0;
+      }
+
+      .nav li {
+        background: none;
+        display: inline-block;
+        margin: 0 10px;
+        width: auto;
+      }
+
+      .nav li a {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+
+      .nav li a:hover {
+        color: #888;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+      }
+
+      .hidden {
+        opacity: 1;
+        visibility: initial;
+      }
+    /* Nav Portion Ends */
+
+    /* About Section */
+      .about-content {
+        width: 82.5%;
+      }
+
+      .about-content p {
+        font-size: 1.25rem;
+      }
+
+      .about-content img {
+        max-width: 49.5%;
+      }
+    /* About Section Ends */
+
+    /* Footer Section */
+      .footer-top-container {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .footer-content {
+        margin: 0 50px;
+        width: 25%;
+      }
+    /* Footer Section Ends */
+  }
+
+  @media (min-width: 900px) {
+
+    .logo {
+      margin-left: 16.5%;
+    }
+
+    .nav {
+      margin: 0 16.5% 0 0;
+      width: auto;
+    }
+
+    /* About Section */
+      .about-container {
+        padding: 50px 0 25px;
+      }
+
+      .about-content {
+        display: flex;
+        width: 90%;
+      }
+
+      .about-content div:first-child {
+        align-self: center;
+        flex: 2;
+      }
+
+      .about-content div:nth-child(2) {
+        flex: 1;
+      }
+
+      .about-content img {
+        max-width: 90%;
+      }
+    /* About Section Ends */
+
+    /* Portfolio Section */
+      .portfolio-flex {
+        display: flex;
+        width: 100%;
+      }
+    /* Portfolio Section Ends */
+
+    /* Contact Section */
+      .contact-content {
+        width: 66%;
+      }
+
+      .contact-container form input {
+        font-size: 1.5rem;
+      }
+  }
+
+  @media (min-width: 1200px) {
+    /* .container {
+      max-width: 85%;
+    } */
+
+    /* About Section */
+      .about-container {
+        padding: 50px 0 25px;
+      }
+
+      .about-content {
+        display: flex;
+        width: 90%;
+      }
+
+      .about-content div:first-child {
+        align-self: center;
+        flex: 2;
+      }
+
+      .about-content div:nth-child(2) {
+        flex: 1;
+      }
+
+      .about-content img {
+        max-width: 90%;
+      }
+    /* About Section Ends */
+
+    /* Portfolio Section */
+      .portfolio-flex {
+        display: flex;
+        width: 100%;
+      }
+    /* Portfolio Section Ends */
+
+    /* Contact Section */
+      .contact-content {
+        width: 66%;
+      }
+
+      .contact-container form input {
+        font-size: 1.5rem;
+      }
+  }
+
+  @media (min-width: 1550px) {
+    .logo {
+      margin-left: 24.75%;
+    }
+
+    .nav {
+      margin: 0 24.75% 0 0;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .logo {
+      margin-left: 33%;
+    }
+
+    .nav {
+      margin: 0 33% 0 0;
+    }
+  }
